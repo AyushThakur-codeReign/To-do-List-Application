@@ -1,0 +1,188 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<style>
+    @import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+    * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+        font-family: "Poppins", sans-serif;
+        font-weight: 400;
+        font-style: normal;
+    }
+    .li{
+        border:1px solid grey;
+        border-radius:5px;
+        height:7vh;
+        width: 40vh;
+        display:flex;
+        justify-content: space-around;
+        align-items: center;
+        margin:10px;
+        font-family: "Poppins", sans-serif;
+        font-weight: 700;
+
+    }
+
+    .dark {
+        background-color: #31363F;
+        color: white;
+    }
+
+    .navbar {
+        background-color: #7234fa;
+        color: white;
+        display: flex;
+        justify-content: space-between;
+        margin-bottom: 20px;
+        align-items: center;
+    }
+    .head{
+        margin:10px;
+       font-weight: 700;
+        
+    }
+    .main{
+        display:flex;
+        
+    }
+    .box{
+        display:flex;
+        justify-content:center;
+        align-items: center;
+        list-style-type: none;
+        gap:30px;
+        margin:10px;
+         }
+    .items{
+       font-weight: 700; 
+    }
+    .container{
+        display:flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+    #myform{
+        display:flex;
+        justify-content: center;
+        align-items: center;
+        
+    }
+    .inputs{
+        padding:10px;
+        border-radius: 5px;
+        border:1px solid grey;
+        font-size: medium;
+        
+
+    } 
+    .box2{
+        font-weight: 700;
+        font-size: larger;
+        height:50vh;
+        width:60vh;
+        border:1px solid grey;
+        border-radius:8px;
+        display:flex;
+        flex-direction:column;
+        align-items: center;
+        margin:20px;
+        padding:10px;
+        
+    } 
+    #list{
+     display:flex;
+     flex-direction: column;
+     justify-content: center;
+    
+     padding:10px;
+    }  
+   
+    .btn{
+        margin:20px;
+        padding:10px;
+        border-radius:10px;
+        border:none;
+        background-color:#ea940c;
+        color:white;
+        font-weight: 700;
+    }
+    /* Example minimal styles, you can move to a CSS file */
+body.dark {
+  background: #1e1e2f;
+  color: #eee;
+}
+button {
+  cursor: pointer;
+  font-size: 0.9rem;
+}
+.todo-item {
+  list-style: none;
+  padding: 8px;
+  margin-bottom: 4px;
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  background: rgba(0,0,0,0.05);
+  border-radius: 6px;
+}
+.todo-item span {
+  flex-grow: 1;
+  word-break: break-word;
+}
+button.small {
+  padding: 6px 10px;
+  border: none;
+  border-radius: 5px;
+}
+button.edit {
+  background: #5889e9;
+  color: white;
+}
+button.delete {
+  background: #ed0800;
+  color: white;
+}
+input.edit-input {
+  flex-grow: 1;
+  padding: 4px 6px;
+  font-size: 1rem;
+}
+
+</style>
+
+<body>
+    <nav class="navbar">
+        <h2 class="head">To do App</h2>
+        <div class="main">
+            <ul class="box">
+                <li class="items">Home</li>
+                <li class="items">Contact</li>
+                <li class="items">services</li>
+            </ul>
+        </div>
+        <button id="btn" class="btn">Dark Mode</button>
+    </nav>
+    <section class="container">
+        <form id="myform">
+            <input type="text" placeholder="Enter the Task" id="input" class="inputs">
+            <button type="submit" class="btn">Add Task</button>
+        </form>
+            <div class="box2">Here are your TODO's
+            <ul id="list">
+            </ul>
+            </div>
+       
+    </section>
+    <script src="Todo.js"></script>
+</body>
+
+</html>
